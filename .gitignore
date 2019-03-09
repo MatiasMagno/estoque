@@ -8,6 +8,8 @@ public/default.php
 
 # comments
 .env
+composer.lock
+package-lock.json
 Homestead.yaml
 Homestead.json
 
