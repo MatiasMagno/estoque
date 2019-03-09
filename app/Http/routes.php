@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "<a href='/produtos'> Listagem de Produtos </a>";
 });
+
+Route::get('/produtos' , 'ProdutoController@index');
