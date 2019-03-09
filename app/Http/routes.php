@@ -12,13 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "<a href='/produtos'> Listagem de Produtos </a>";
 });
 
-Route::get('/auth' ,function (){
-    return "primeira lógica com laravel";
-});
-
-Route::get('/teste' ,function (){
-    return "primeira lógica com laravel";
-});
+Route::get('/produtos' , 'ProdutoController@index');
