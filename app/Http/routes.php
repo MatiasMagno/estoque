@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/auth' ,function (){
+    return "primeira lógica com laravel";
+});
+
+Route::get('/teste' ,function (){
+    return "primeira lógica com laravel";
+});
