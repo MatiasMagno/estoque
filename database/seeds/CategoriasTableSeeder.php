@@ -9,8 +9,15 @@ class CategoriasTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        //
+    public function run() {
+        // criação de massa de dados
+        DB::table('categorias')->insert([
+            [
+                'nome' => 'Escritório',
+            ],
+            [
+                'nome' => 'Eletrônicos',
+            ]
+        ]);
     }
 }
