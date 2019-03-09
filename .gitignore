@@ -1,0 +1,16 @@
+# comments
+.idea/
+nbproject/
+.vscode/
+
+# comments
+public/default.php
+
+# comments
+.env
+Homestead.yaml
+Homestead.json
+
+# comments
+node_modules/
+vendor/
