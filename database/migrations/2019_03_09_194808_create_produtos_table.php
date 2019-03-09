@@ -9,12 +9,12 @@ class CreateProdutosTable extends Migration {
         Schema::create('produtos', function (Blueprint $table){
             $table->increments('id');
             $table->string('nome');
-            $table->decimal('preco', 5 , 2);
-            $table->boolean('usado')->default('1');
-            $table->integer('categoria_id')->unsigned();
+            $table->decimal('valor', 10 , 2);
+            $table->integer('quantidade');
             $table->longText('descricao');
-            $table->timestamps('criado');
+            $table->integer('categoria_id')->unsigned();
             $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->timestamps();
         });
     }
 

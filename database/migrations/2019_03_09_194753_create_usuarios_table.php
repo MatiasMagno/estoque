@@ -12,7 +12,7 @@ class CreateUsuariosTable extends Migration {
             $table->string('email')->unique();
             $table->string('senha', 60);
             $table->rememberToken();
-            $table->timestamps('criado');
+            $table->timestamps();
         });
     }
 
