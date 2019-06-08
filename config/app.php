@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://estoque.echosix.com.br',
+    'url' => env('APP_URL','http://estoque.echosix.com.br/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'timezone' => 'America/Sao_Paulo',
+    'timezone' => env('APP_TIMEZONE','America/Sao_Paulo'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'pt-br',
+    'locale' => env('APP_LOCALE','pt-br'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => env('APP_FALLBACK_LOCALE','en'),
 
     /*
     |--------------------------------------------------------------------------
@@ -140,11 +140,13 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        SGE\Providers\AppServiceProvider::class,
+        SGE\Providers\AuthServiceProvider::class,
+        SGE\Providers\EventServiceProvider::class,
+        SGE\Providers\RouteServiceProvider::class,
 
+        /* Scafold of bestmomo views for laravel framework */
+        Bestmomo\Scafold\ScafoldServiceProvider::class,
     ],
 
     /*

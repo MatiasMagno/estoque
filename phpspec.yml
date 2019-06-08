@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: SGE
+        psr4_prefix: SGE
         src_path: app

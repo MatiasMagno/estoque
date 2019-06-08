@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return "<a href='/produtos'> Listagem de Produtos </a>";
+    return view('welcome');
 });
 
-Route::get('/produtos' , 'ProdutoController@index');
+Route::get('/categorias' , 'Configuracao\CategoriaController@index');
+Route::get('/produtos' , 'Configuracao\ProdutoController@index');
+Route::get('/usuarios' , 'Seguranca\UsuarioController@index');
