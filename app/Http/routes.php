@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 Route::get('/categorias' , 'Configuracao\CategoriaController@index');
 Route::get('/produtos' , 'Configuracao\ProdutoController@index');
+Route::get('/produtos/visualizar','Configuracao\Produtos@show');
 Route::get('/usuarios' , 'Seguranca\UsuarioController@index');
