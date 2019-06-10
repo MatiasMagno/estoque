@@ -28,9 +28,9 @@
                         <td> <?= $produto->descricao ?></td>
                         <td> <?= $produto->quantidade ?></td>
                         <td>
-                            <a href="#"><span class="glyphicon glyphicon glyphicon-menu-hamburger"></span></a>
-                            <a href="#"><span class="glyphicon glyphicon glyphicon glyphicon-refresh"></span></a>
-                            <a href="#"><span class="glyphicon glyphicon glyphicon glyphicon-trash"></span></a>
+                            <a href="produtos/show"><span class="glyphicon glyphicon glyphicon-menu-hamburger"></span></a>
+                            <a href="produtos/edit"><span class="glyphicon glyphicon glyphicon glyphicon-refresh"></span></a>
+                            <a href="produtos/delete"><span class="glyphicon glyphicon glyphicon glyphicon-trash"></span></a>
                         </td>
                     </tr>
                     <?php endforeach;?>
