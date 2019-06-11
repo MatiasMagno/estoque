@@ -11,7 +11,7 @@ class UsuarioController extends Controller {
     // comentários
     public function index() {
         $usuarios = DB::select('SELECT * FROM usuarios');
-        dd($usuarios);
+        return view('seguranca/usuarios/usuarios')->with('usuarios', $usuarios);
     }
 
     // comentários

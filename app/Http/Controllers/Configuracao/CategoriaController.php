@@ -11,7 +11,7 @@ class CategoriaController extends Controller {
     // comentários
     public function index() {
         $categorias = DB::select('SELECT * FROM categorias');
-        dd($categorias);
+        return view('configuracao/categorias/categorias')->with('categorias' , $categorias);
     }
 
     // comentários
