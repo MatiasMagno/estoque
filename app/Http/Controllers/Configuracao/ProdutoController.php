@@ -11,7 +11,8 @@ class ProdutoController extends Controller {
     // comentários
     public function index() {
         $produtos = DB::select('SELECT * FROM produtos');
-        return view('configuracao/produtos/produtos')->with('produtos' , $produtos);
+        return reponse($produtos);
+        echo response;
     }
 
     // comentários
